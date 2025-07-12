@@ -1,0 +1,116 @@
+import Card from 'react-bootstrap/Card';
+    <div className="App mt-3 ml-3">
+      <Container variant="outline-secondary">
+        <Row>
+          <Col
+            sm={5}
+            bg="light"
+            data-bs-theme="light"
+            r
+            className="bg-body-tertiary"
+          >
+            <Row className="mb-4">
+              <h1>&#129056; Semua Pekerjaan</h1>
+              <Form className="d-flex m-auto mb-3">
+                <Form.Control
+                  type="search"
+                  placeholder="Cari Lowongan Pekerjaan disini"
+                  className="me-2"
+                  aria-label="Cari Lowongan Pekerjaan disini"
+                />
+              </Form>
+
+              <Form.Text className="text-muted ml-5 mt-4">
+                Lowongan Kerja
+              </Form.Text>
+              <Row className="mt-4 m-auto">
+                <Col>
+                  <Button
+                    className="m-auto"
+                    style={{ width: "10rem", height: "50px" }}
+                    variant="outline-secondary"
+                  >
+                    Siap Kerja
+                  </Button>
+                </Col>
+                <Col>
+                  <Button
+                    className="m-auto"
+                    style={{ width: "10rem", height: "50px" }}
+                    variant="outline-secondary"
+                  >
+                    Sijuara
+                  </Button>
+                </Col>
+              </Row>
+
+              <Form.Select
+                className=" mt-4"
+                aria-label="Default select example"
+              >
+                <option>Kategori</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </Form.Select>
+
+              <Form.Select
+                className=" mt-4"
+                aria-label="Default select example"
+              >
+                <option>Lokasi</option>
+                <option value="1">Dalam Negeri</option>
+                <option value="2">Luar Negeri</option>
+              </Form.Select>
+              <Row className="mt-4 m-auto">
+                <Col>
+                  <Button
+                    className="m-auto"
+                    style={{ width: "7rem", height: "50px" }}
+                    variant="outline-secondary"
+                  >
+                    Terima
+                  </Button>
+                </Col>
+                <Col>
+                  <Button
+                    className="m-auto"
+                    style={{ width: "7rem", height: "50px" }}
+                    variant="outline-secondary"
+                  >
+                    Terbaru
+                  </Button>
+                </Col>
+                <Col>
+                  <Button
+                    className="m-auto"
+                    style={{ width: "7rem", height: "50px" }}
+                    variant="outline-secondary"
+                  >
+                    A-Z
+                  </Button>
+                </Col>
+              </Row>
+              <Row className="m-auto  mb-5 mt-4">
+                <Button
+                  className="m-auto  mt-4"
+                  style={{ width: "25rem", height: "50px" }}
+                  variant="outline-secondary"
+                >
+                  Reset Filter
+                </Button>
+              </Row>
+            </Row>
+          </Col>
+          <Col md="auto"></Col>
+          <Col
+            bg="light"
+            data-bs-theme="light"
+            r
+            className="bg-body-tertiary mb-4"
+          >
+           data.map((i, index) => <CardView key={index} {...i} />)
+          </Col>
+        </Row>
+      </Container>
+    </div>
