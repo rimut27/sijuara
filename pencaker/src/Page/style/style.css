@@ -1,0 +1,80 @@
+/* src/ProfileCard.css */
+.profile-card {
+    background-color: #3C92F7;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    color: white;
+    text-align: center;
+  }
+  
+  .profile-header {
+    position: relative;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .edit-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .profile-info p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #dcdcdc;
+  }
+  
+  .profile-status {
+    margin-top: 20px;
+  }
+  
+  .profile-status p {
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  .progress-bar {
+    background-color: #dcdcdc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+    height: 10px;
+  }
+  
+  .progress {
+    background-color: orange;
+    height: 100%;
+  }
+  
+  .validation-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .validation-dot {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  
